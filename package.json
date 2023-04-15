@@ -1,0 +1,22 @@
+{
+  "name": "algorithms_and_data_structure_challenge",
+  "version": "1.0.0",
+  "description": "## 1. Create an algorithm that runs through a one-dimensional array containing letters and numbers: [ “a”, 10, “b”, “hola”, 122, 15]",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielrodriguesleite/algorithms_and_data_structure_challenge.git"
+  },
+  "author": "Gabriel Rodrigues Leite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielrodriguesleite/algorithms_and_data_structure_challenge/issues"
+  },
+  "homepage": "https://github.com/gabrielrodriguesleite/algorithms_and_data_structure_challenge#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
