@@ -1,7 +1,7 @@
 {
   "name": "algorithms_and_data_structure_challenge",
   "version": "1.0.0",
-  "description": "## 1. Create an algorithm that runs through a one-dimensional array containing letters and numbers: [ “a”, 10, “b”, “hola”, 122, 15]",
+  "description": "Lexart challenge 2 for Full Stack Developer",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
