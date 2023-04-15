@@ -1,4 +1,4 @@
-const { filter, calc } = require("./algorithms.js")
+const { filter, calc, newID } = require("./algorithms.js")
 
 const TEST_ARRAY = ["a", 10, "b", "hola", 122, 15]
 const TEST_ARRAY2 = ["bye", 324, "d", "X", 6534, "hello", 123, "e", "3", 765]
@@ -51,5 +51,26 @@ describe("===== 2 - Testes para calc: =====", () => {
 
   test("\"division\" lança um erro quando \"b\" é 0:", () => {
     expect(() => calc.division(122, 0)).toThrow(new Error("0 division error."))
+  })
+})
+
+describe("===== 3 - Testes para newID: =====", () => {
+  const IDS = "1234567".split("").map(i => newID())
+
+  test.each(IDS)("a função deve retornar uma string contendo 4 grupos de 4 \n\tcaracteres alfanuméricos separados por traço \"-\".",
+    (i) => {
+      expect(
+        /[a-zA-Z0-9]{4}[-][a-zA-Z0-9]{4}[-][a-zA-Z0-9]{4}[-][a-zA-Z0-9]{4}/
+        .test(i)
+      )
+      .toBeTruthy()
+    })
+
+  test("a função deve retornar valores aleatórios.", () => {
+    for (i in IDS) {
+      if (i != IDS[0]) {
+        expect(IDS[i]).not.toEqual(IDS[i - 1])
+      }
+    }
   })
 })

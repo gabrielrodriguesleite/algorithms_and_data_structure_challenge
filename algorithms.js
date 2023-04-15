@@ -24,7 +24,10 @@ const calc = {
   }
 }
 
-const newID = () => ""
+const newID = () => "XXXX-AAAA-BBBB-CCCC"
+  .split("")
+  .map((i) => i != "-" ? Math.random().toString(36)[3] : i)
+  .join("")
 
 
 module.exports = { filter, calc, newID }
