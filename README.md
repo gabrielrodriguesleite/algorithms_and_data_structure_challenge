@@ -9,6 +9,8 @@ To install the dependencies run: `npm install`
 
 To run project tests: `npm test`
 
+![jest-result](./jest-tests.png)
+
 ---
 
 ## 1. Create an algorithm that runs through a one-dimensional array containing letters and numbers: [ “a”, 10, “b”, “hola”, 122, 15]
