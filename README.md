@@ -5,6 +5,10 @@
 
 Project developed with Node an Jest.
 
+To get the project run: `git clone git@github.com:gabrielrodriguesleite/algorithms_and_data_structure_challenge.git`
+
+Go to the project folder: `cd algorithms_and_data_structure_challenge`
+
 To install the dependencies run: `npm install`
 
 To run project tests: `npm test`
